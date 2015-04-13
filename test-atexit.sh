@@ -1,0 +1,1 @@
+./test-command.sh ./test-atexit.py
