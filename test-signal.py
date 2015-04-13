@@ -13,7 +13,7 @@ def run():
     signal.signal(signal.SIGALRM, clean_shutdown)
     signal.signal(signal.SIGHUP, clean_shutdown)
     signal.signal(signal.SIGINT, clean_shutdown)
-    signal.signal(signal.SIGTERM, lambda x, y: clean_shutdown(x, y))
+    signal.signal(signal.SIGTERM, clean_shutdown)
 
     while True:
         print "Python sleeping"
